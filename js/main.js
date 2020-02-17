@@ -1,5 +1,7 @@
 var nome = prompt('Nome');
 var cognome = prompt ('Cognome');
 var colorePreferito = prompt ('Colore preferito');
-document.getElementById('psw').innerHTML = nome + cognome + colorePreferito + 20;
+var data = new Date ()
+var annoCorrente = data.getFullYear();
+document.getElementById('psw').innerHTML = nome + cognome + colorePreferito + annoCorrente;
 document.getElementById('container').setAttribute('class','visible');
